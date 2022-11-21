@@ -18,6 +18,7 @@ else
                 <th>foto</th>
                 <th>nome</th>
                 <th>Descrizione</th>
+                <th>info</th>
             </tr>
         </thead>
         <tbody>
@@ -32,6 +33,7 @@ else
                     <td class="description">
                         @pizza.Description
                     </td>
+                    <td><a href="@Url.Action("Detail",new {id = pizza.Id})">info</a></td>
                 </tr>
             }
         </tbody>
