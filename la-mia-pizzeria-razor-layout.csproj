@@ -8,7 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Razor\**" />
+    <Content Remove="Views\Razor\**" />
+    <EmbeddedResource Remove="Views\Razor\**" />
+    <None Remove="Views\Razor\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\RazorController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\Pizza\Index1.cshtml" />
+    <Content Remove="Views\Shared\_Layout_Razor.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
